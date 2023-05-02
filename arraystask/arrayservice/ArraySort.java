@@ -2,7 +2,7 @@ package arrayservice;
 
 public class ArraySort {
 
-    public void bubbleSort(int[] array) {
+    public int[] bubbleSort(int[] array) {
         int n = array.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -13,8 +13,10 @@ public class ArraySort {
                 }
             }
         }
+        return array;
     }
-    public void selectionSort(int[] array) {
+
+    public int[] selectionSort(int[] array) {
         int n = array.length;
         for (int i = 0; i < n - 1; i++) {
             int min = i;
@@ -27,5 +29,6 @@ public class ArraySort {
             array[min] = array[i];
             array[i] = temp;
         }
+        return array;
     }
 }

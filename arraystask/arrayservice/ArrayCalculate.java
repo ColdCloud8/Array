@@ -27,8 +27,8 @@ public class ArrayCalculate {
 
     public int findAverageValue(int[] array) {
         int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+        for (int j : array) {
+            sum += j;
         }
         return sum / array.length;
     }
@@ -36,8 +36,8 @@ public class ArrayCalculate {
 
     public int calculateSumValues(int[] array) { //
         int sum = 0;
-        for (int j : array) {
-            sum += j;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
         }
         return sum;
     }
